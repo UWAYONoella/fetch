@@ -1,0 +1,10 @@
+.photo{
+    display:flex;
+   flex-direction:column;
+    grid-gap: 3px;
+}img{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    /* background-position-x: center; */
+}
