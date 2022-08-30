@@ -633,11 +633,24 @@
 
 const fetchData=async()=>{
     const data=await  (await fetch("https://api.github.com/users")).json()
-       console.log(data);
+    //    console.log(data);
    //  const keepData= data.then((res)=>res.json());
    // keepData.then((images)=> console.log(images))
    const displayData=data.map((item)=>(`<img src=${item.avatar_url}> ${item.id},${item.login}`));
    const photo=document.getElementById("photo");
    photo.innerHTML+=`${displayData}`;
+   const card=`<div class="card">
+   <div class="card-body">
+   <img src=${item.avatar_url}>
+</div>
+<div class="card-name">${item.login}</div>
+<i style="color:white ;">"Our Equilibrium collection 
+promotes balance and calm"
+</i>
+<div class="card-id" style="color:white;">"${item.id}"</div>
+<span><hr> </span>
+<img src=${item.avatar_url} id="mage"><p>"nocry before"</p>
+</div>`
+photo.innerHTML+=card;
    }
    fetchData();
