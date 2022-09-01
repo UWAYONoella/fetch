@@ -1,42 +1,54 @@
-.photo{
+/* .photo{
     display:flex;
    flex-direction:column;
     grid-gap: 3px;
-}img{
+} */
+.card img{
     height: 60px;
     width: 60px;
     margin: auto;
     /* background-position-x: center; */
 }
 .card{
-    background-color: rgb(62, 62, 174);
+    border-radius: 5px;
+    background-color: rgb(46, 46, 87);
     display: flex;
     flex-direction: column;
-    grid-gap: 10px;
-    height: 300px;
+    grid-gap: 60px;
+    /* height: 300px; */
     width: 200px;
     text-align: center;
-padding-top: 20px;
+padding-top: 10px;
 margin: auto;
 }
-.card img{
- height: 50px;
- width: 50px;
+.mage img{
+ height: 30px;
+ width: 30px;
  border-radius: 50%;
+ border: 1px solid white;
+ margin-top: -200px;
+ margin-left: -150px;
    
 }
 .card-body{
-    height: 70px;
-    padding-top: 20px;
- width: 70px;
+ width: 90px;
+ height: 100px;
  margin-left: 30%;
     border-radius: 5%;
   background-color: rgb(91, 126, 148);
+  margin-top: 100px;
 }
-p{
- margin-top: -50px;
- margin-right: -90px;
+.card-body img{
+    border-radius: 50%;
 }
-#mage{
-    margin-left: 20px;
+.name{
+    margin-top: -90px;
+    color: green;
+}
+/* .card-id{
+    margin-top: -90px;  
+    background-color: black; 
+} */
+.mage{
+    margin-top: -50px;
 }
